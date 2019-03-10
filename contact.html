@@ -6,9 +6,26 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<style type="text/css">
+	
+	.bg-info {
+	    background-color: orange !important;
+	}
+
+	.border-primary {
+    border-color: orange !important;
+	}
+	.btn-info {
+    color: #fff;
+    background-color: #FF9800;
+    border-color: #FF9800;
+}
+
+</style>
 </head>
 <body>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-warning">
                 <a class="navbar-brand" href="index.html">Formation Git</a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -23,11 +40,12 @@
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
+                                <a class="nav-link" href="products.html">Product</a>
+                            </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="products.html">Product</a>
-                        </li>
+                       
                     </ul>
                     
                 </div>
@@ -35,8 +53,8 @@
 <div class="container">
     <h2 class="text-center">Contac Form</h2>
 	<div class="row justify-content-center">
-		<div class="col-12 col-md-8 col-lg-6 pb-5">
-                    <!--Form with header-->
+		<div class="col-md-6">
+			<!--Form with header-->
                     <form action="mail.php" method="post">
                         <div class="card border-primary rounded-0">
                             <div class="card-header p-0">
@@ -51,7 +69,7 @@
                                 <div class="form-group">
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                            <div class="input-group-text"><i class="fa fa-user text-orange"></i></div>
                                         </div>
                                         <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
                                     </div>
@@ -59,7 +77,7 @@
                                 <div class="form-group">
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                            <div class="input-group-text"><i class="fa fa-envelope text-orange"></i></div>
                                         </div>
                                         <input type="email" class="form-control" id="nombre" name="email" placeholder="ejemplo@gmail.com" required>
                                     </div>
@@ -68,7 +86,7 @@
                                 <div class="form-group">
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                                            <div class="input-group-text"><i class="fa fa-comment text-orange"></i></div>
                                         </div>
                                         <textarea class="form-control" placeholder="Envianos tu Mensaje" required></textarea>
                                     </div>
@@ -78,12 +96,16 @@
                                     <input type="submit" value="Enviar" class="btn btn-info btn-block rounded-0 py-2">
                                 </div>
                             </div>
-
                         </div>
                     </form>
                     <!--Form with header-->
+		</div>
+		<div class="col-md-6">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14527.809491239632!2d-5.005815701480275!3d34.02965305262818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd9f8bd4a208db83%3A0xc0d479eefb425227!2sfes!5e0!3m2!1sfr!2sma!4v1552217855751" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+                 
          </div>
-	</div>
+	
 </div>
 </body>
 </html>
